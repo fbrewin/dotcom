@@ -1,20 +1,7 @@
 html {
-	background: url(img/bg.jpg) no-repeat center center fixed; 
+	background: url("/img/bg.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-body {
-	background: transparent;
-	color: #333;
-}
-
-.jumbotron {
-	background-color: rgba(255, 255, 255, 0.5);
-}
-
-h1, .h1 {
-	font-family: 'IM Fell DW Pica SC', serif;
 }
