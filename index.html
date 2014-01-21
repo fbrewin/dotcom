@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fred Brewin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+        <div class="vert-text">
+			<div class="col-md-6 col-md-offset-3 text-center">
+			<img src="img/fred.jpg" class="img-responsive img-circle center-block"/>
+            <h1>Fred Brewin</h1>
+            <p class="lead">Hi, I'm a Product Manager at Google living in San Francisco. I enjoy exploring, taking photos, skiing and making cheese.</p>
+            <p class="lead">Find out <a href="#about">about me</a> and see what I'm up to on my <a href="blog/">blog</a>.</p>
+            	<ul class="list-inline">
+                	<li><a href="http://www.facebook.com/fredb"><i class="fa fa-facebook fa-2x"></i></a></li>
+					<li><a href="http://www.twitter.com/fbrewin"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<li><a href="http://www.linkedin.com/in/brewin"><i class="fa fa-linkedin fa-2x"></i></a></li>
+					<li><a href="http://www.youtube.com/fbrewin"><i class="fa fa-youtube-play fa-2x"></i></a></li>
+					<li><a href="http://www.google.com/+FredBrewin"><i class="fa fa-google-plus fa-2x"></i></a></li>
+					<li><a href="mailto:fred@brewin.me"><i class="fa fa-envelope fa-2x"></i></a></li>
+				</ul>
+			</div>
+        </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+
+    <!-- About -->
+    <div id="about" class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                	<h2>Who is Fred?</h2>
+                </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <p class="lead">After growing up in the UK, I studied Computer Science at King's College in Cambridge and had a lot of fun in the process. Next I spent a couple of years living in Zurich, Switzerland working for Google and skiing a lot.</p>
+                    <p class="lead">In 2013 I moved to San Francisco. Along the way I visited more than a quarter of the countries on the planet, and I'm working on the rest. New gadgets excite me almost as much as a yummy home-cooked vegetarian meal. If you like talking about interesting things, get in touch.</p>
+                </div>
+                <div class="col-md-4 text-right">
+                   <img class="img-responsive" src="img/froelle.jpg">
+                   <h5>On top of Table Mountain with <a href="http://www.noellephillips.com/">Noelle</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /About -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/retina.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
